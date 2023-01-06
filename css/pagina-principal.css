@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+:root{
+    --verde-mais-escuro: #30372A;
+    --verde-muito-escuro: #384332;
+    --verde--escuro: #648363;
+    --verde-menos-escuro: #919F78;
+    --verde-meio-claro: #BECC90;
+    --verde-clarinho: #C2C6AB;
+    --creme-de-coco: #FAFAE1;
+}
+
+body{
+    background-color: var(--verde--escuro);
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    color: var(--creme-de-coco);
+    padding: 10px 0;
+    background-color: var(--verde-mais-escuro);
+}
+
+.boas-vindas{
+    margin-bottom: 20px;
+}
+
+.principal{
+    text-align: center;
+}
+
+.divisao{
+    color: var(--verde-clarinho);
+    margin-bottom: 10px;
+}
+
+
+.obs{
+    color: rgb(250, 80, 80);
+    background-color: var(--verde-mais-escuro);
+}
+
+span{
+    background-color: var(--verde-mais-escuro);
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--creme-de-coco);
+    padding: 0 4px;
+}
+
+mark{
+    background-color: var(--verde-mais-escuro);
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--creme-de-coco);
+    padding: 0 4px;
+}
+
+.etapas, .primeira-fase, .segunda-fase{
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: var(--verde-meio-claro);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.facilitadora{
+    background-color: var(--verde-mais-escuro);
+    border-radius: 5px; 
+    padding: 10px 30px 30px 30px;
+}
+
+.escolha{
+    font-size: 1.5rem;
+    color: var(--verde-menos-escuro);
+    margin-bottom: 20px;
+}
+
+.opcao-1, .opcao-2{
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid;
+}
+
+.opcao-1{
+    background-color: var(--creme-de-coco);
+    color: var(--verde--escuro);
+    border-color: var(--creme-de-coco);
+}
+
+.opcao-2{
+    color: var(--creme-de-coco);
+    border-color: var(--creme-de-coco);
+}
+
+.opcao-1:hover{
+    background-color: var(--verde--escuro);
+    color: var(--creme-de-coco);
+    border-color: var(--verde--escuro);
+}
+
+.opcao-2:hover{
+    color: var(--verde--escuro);
+    border-color: var(--verde--escuro);
+}
+
+footer{
+    color: var(--creme-de-coco);
+    text-align: center;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: var(--verde-mais-escuro);
+}

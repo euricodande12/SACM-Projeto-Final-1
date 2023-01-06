@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+:root{
+    --verde-mais-escuro: #30372A;
+    --verde-muito-escuro: #384332;
+    --verde--escuro: #648363;
+    --verde-menos-escuro: #919F78;
+    --verde-meio-claro: #BECC90;
+    --verde-clarinho: #C2C6AB;
+    --creme-de-coco: #FAFAE1;
+}
+body{
+	background-color: var(--verde-mais-escuro);
+	width: 100vw;
+	height: 100vh;
+    overflow-x: hidden;
+}
+
+#container{
+	display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 60px;
+}
+
+.card{
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+
+}
+
+.imagem-da-lateral{
+    width: 350px;
+}
+
+.first-section{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-section{
+	background-color: var(--verde-muito-escuro);
+	border-radius: 15px;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 20px 0;
+    width: 60%;
+}
+
+.logo{
+    width: 80px;
+}
+
+.login-text{
+	text-transform: uppercase;
+	color: var(--creme-de-coco);
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.descricao{
+	margin-top: 5px;
+	font-size: 1.3rem;
+	font-weight: bold;
+    color: var(--creme-de-coco);
+}
+
+.inputs{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+input, .btn-entrar{
+	width: 60%;
+	height:45px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 5px 0;
+	background-color: var(--verde-mais-escuro);
+	outline: none;
+	text-align: center;
+	font-size: 1.5rem;
+    color: var(--creme-de-coco);
+    padding: 7px 8px;
+	text-decoration: none;
+}
+
+input::placeholder {
+  color:var(--verde-menos-escuro);
+}
+
+.btn-entrar{
+	width: 60%;
+	height:45px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: var(--verde--escuro);
+	color: var(--verde-meio-claro);
+	cursor: pointer;
+	transition: 0.5s background-color;
+}
+
+.btn-entrar:hover{
+	background-color:var(--verde-meio-claro
+    );
+	color: var(--verde--escuro);
+}
+
+.anchor{
+	margin-top: 30px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: var(--verde--escuro);
+	transition: 0.7s color;
+}
+
+.anchor:hover{
+	color: var(--verde-clarinho)
+}
+
+.last-paragraph{
+	margin-top: 10px;
+	font-size: 1.3rem;
+	font-weight: bold;
+    color: var(--creme-de-coco);
+}
+
+.last-anchor{
+	text-decoration: none;
+	color:var(--verde--escuro);
+	transition: 0.7s color;
+}
+
+.last-anchor:hover{
+	color: white;
+}
+
+/* Responsividade */
+@media (max-width: 1104px)
+{
+	body{
+		overflow-y: scroll;
+        padding: 20px 5px 30px 10px ;
+	}
+
+    #container{
+        padding: 30px;
+    }
+
+	.first-section{
+		display: none;
+	}
+	
+    .second-section{
+        width: 80%;
+    }
+
+	.login-text{
+		font-size: 30px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+}
