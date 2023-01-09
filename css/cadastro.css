@@ -94,7 +94,7 @@ input{
 	height:40px;
 	margin-top: 20px;
 	border: none;
-	border-radius: 5px 0;
+	border-radius: 10px 0;
 	background-color: var(--verde-mais-escuro);
 	outline: none;
 	text-align: center;
@@ -112,7 +112,7 @@ input::placeholder {
 	height:40px;
 	margin-top: 20px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px 0;
 	font-size: 1.5rem;
 	font-weight: bold;
 	background-color: var(--verde--escuro);
@@ -125,6 +125,7 @@ input::placeholder {
 	background-color:var(--verde-meio-claro
     );
 	color: var(--verde--escuro);
+	border-radius: 0 10px;
 }
 
 .last-paragraph{
@@ -148,8 +149,8 @@ input::placeholder {
 @media (max-width: 1104px)
 {
 	body{
-		overflow-y: scroll;
-        padding: 20px 5px 30px 10px ;
+		overflow-y: auto;
+        padding: 5px 5px 10px -10px ;
 	}
 
     #container{
@@ -162,19 +163,35 @@ input::placeholder {
 	
     .second-section{
         width: 90%;
+		padding: 20px 30px;
     }
 
 	.login-text{
-		font-size: 30px;
+		font-size: 25px;
 		margin-top: 10px;
 		margin-bottom: 20px;
 	}
+	
+	.descricao{
+		margin-top: 5px;
+		font-size: 1.1rem;
+	}	
 
     input{
-        width: 60%;
+        width: 80%;
         height:40px;
         margin-top: 20px;
         font-size: 1.1rem;
         padding: 10px 8px;
     }
+
+	.btn-entrar{
+		font-size: 1.1rem;
+		width: 80%;
+	}
+
+	.last-paragraph{
+		margin-top: 20px;
+		font-size: 1.1rem;
+	}
 }

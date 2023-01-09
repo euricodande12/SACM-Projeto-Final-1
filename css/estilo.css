@@ -19,23 +19,15 @@
 body{
 	background-color: var(--verde-mais-escuro);
 	width: 100vw;
-	height: 100vh;
     overflow-x: hidden;
 }
 
 #container{
 	display: flex;
     align-items: center;
-    width: 100vw;
-    padding: 60px;
-}
-
-.card{
-	border-radius: 15px;
-	display: flex;
 	justify-content: center;
-    align-items: center;
-
+    width: 100vw;
+    padding: 50px;
 }
 
 .imagem-da-lateral{
@@ -57,12 +49,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0 20px 0;
+    padding: 10px 5px 20px 5px;
     width: 60%;
 }
 
 .logo{
     width: 80px;
+	margin-top: 20px;
 }
 
 .login-text{
@@ -74,7 +67,7 @@ body{
 }
 
 .descricao{
-	margin-top: 5px;
+	margin-top: 10px;
 	font-size: 1.3rem;
 	font-weight: bold;
     color: var(--creme-de-coco);
@@ -88,11 +81,11 @@ body{
 }
 
 input, .btn-entrar{
-	width: 60%;
+	width: 90%;
 	height:45px;
 	margin-top: 30px;
 	border: none;
-	border-radius: 5px 0;
+	border-radius: 10px 0;
 	background-color: var(--verde-mais-escuro);
 	outline: none;
 	text-align: center;
@@ -107,16 +100,10 @@ input::placeholder {
 }
 
 .btn-entrar{
-	width: 60%;
-	height:45px;
-	margin-top: 30px;
 	border: none;
-	border-radius: 5px;
-	font-size: 1.5rem;
 	font-weight: bold;
 	background-color: var(--verde--escuro);
 	color: var(--verde-meio-claro);
-	cursor: pointer;
 	transition: 0.5s background-color;
 }
 
@@ -124,6 +111,7 @@ input::placeholder {
 	background-color:var(--verde-meio-claro
     );
 	color: var(--verde--escuro);
+	border-radius: 0 10px;
 }
 
 .anchor{
@@ -160,7 +148,7 @@ input::placeholder {
 {
 	body{
 		overflow-y: scroll;
-        padding: 20px 5px 30px 10px ;
+        padding: 30px 0 30px 0;
 	}
 
     #container{
@@ -172,12 +160,34 @@ input::placeholder {
 	}
 	
     .second-section{
-        width: 80%;
+        width: 90%;
+		padding: 0 20px;
     }
 
 	.login-text{
-		font-size: 30px;
+		font-size: 25px;
 		margin-top: 10px;
 		margin-bottom: 20px;
+	}
+	
+	.descricao{
+		margin-top: 10px;
+		font-size: 1.1rem;
+	}
+
+	input, .btn-entrar{
+		width: 90%;
+		height:40px;
+		font-size: 1.2rem;
+		padding: 7px 8px;
+	}
+	
+	.anchor{
+		font-size: 1.1rem;
+	}
+
+	.last-paragraph{
+		margin-bottom: 30px;
+		font-size: 1.1rem;
 	}
 }

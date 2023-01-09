@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/fase-1.css">
+    <title>SACM - Fase 1</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="logo/logo_transparent.png" alt="" class="logo">
+        <h1 class="tema none">Sistema de Atendimento para o Consultório Médico Vita Extensa</h1>
+        <h1 class="tema none-1 block">SACM VE</h1>
+        <a href="index.html" class="terminar-sessao">Terminar sessão</a>
+    </header>
+    <main class="principal">
+        <div class="divisao-1">
+            <h1 class="boas-vindas">Se ainda tiver dúvidas sobre como o sistema funciona, clique 
+                <a class="first-anchor" href="pagina-principal.html">aqui</a>!</h1>
+            <img src="img/medical-7.png" alt="" class="imagem imagem-1">
+        </div>
+        
+        <div class="divisao-2" id="passo-1">
+            <h2 class="titulo">Dados pessoais</h2>
+            <form action="" class="formulario formulario-1">
+                <label for="data-hora">Data e hora atual:</label>
+                <input type="datetime-local" name="" id="data-hora">
+                <p class="descricao">Preencha o formulário com os dados do/a paciente.</p>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" placeholder="Introduza o nome do/a paciente"><br>
+                <label for="genero">Género:</label><br>
+                <select name="" id="genero">
+                    <option value="Selecione uma das opções">Selecione uma das opções</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Não binário">Não binário</option>
+                </select><br>
+                <label for="idade">Idade:</label><br>
+                <input type="number" name="" id="idade" placeholder="Introduza a idade do/a paciente"><br>
+                <label for="doc">Documento de identificação:</label><br>
+                <select name="" id="doc">
+                    <option value="Selecione o documento que possui">Selecione o documento que possui</option>
+                    <option value="Cédula pessoal">Cédula pessoal</option>
+                    <option value="Bilhete de identidade">Bilhete de identidade</option>
+                    <option value="Passaporte">Passaporte</option>
+                </select><br>
+                <label for="numero">Número do documento de identificação:</label><br>
+                <input type="text" id="numero" placeholder="Introduza o número do documento do/a paciente"><br>
+                <label for="contacto">Contacto telefónico:</label><br>
+                <input type="number" name="" id="contacto" placeholder="Introduza o contacto do/a paciente"><br>
+                <a class="a-btn a-btn-1" onclick="PrimeiroForm()">Seguinte</a>
+            </form>
+        </div>
+
+        <div class="divisao-3" id="passo-2">
+            <h2 class="titulo">Dados vitais</h2>
+            <form action="" class="formulario formulario-2">
+                <label for="nome">Nome do/a paciente:</label>
+                <input type="text" name="" id="nome-1" placeholder="Fulano de Tal" disabled>
+                <p class="descricao">Preencha o formulário com os dados do/a paciente.</p>
+                <label for="peso">Peso (em kg):</label><br>
+                <input type="number" id="peso" placeholder="Introduza o peso do/a paciente"><br>
+                <label for="temperatura">Temperatura (em ºC):</label><br>
+                <input type="number" name="" id="temperatura" placeholder="Introduza a temperatura do/a paciente"><br>
+                <label for="frequencia">Frequência cardíaca (em bpm - opcional):</label><br>
+                <input type="number" id="frequencia" placeholder="Introduza a frequência cardíaca do/a paciente"><br>
+                <label for="pressao">Pressão arterial (em mmHg - opcional):</label><br>
+                <input type="number" name="" id="pressao" placeholder="Introduza a pressão arterial do/a paciente"><br>
+                <a class="a-btn a-btn-1" onclick="SegundoForm()">Seguinte</a>
+            </form>
+        </div>
+
+        <div class="divisao-4" id="passo-3">
+            <h2 class="titulo">Anamnese</h2>
+            <form action="" class="formulario formulario-2">
+                <label for="nome">Nome do/a paciente:</label>
+                <input type="text" name="" id="nome-3" placeholder="Fulano de Tal" disabled>
+                <p class="descricao">Preencha o formulário com os dados do paciente.</p>
+                <label for="motivo">O que lhe traz aqui?</label><br>
+                <textarea name="" id="motivo" cols="30" rows="2" placeholder="Ex: Dores de cabeça frequentes..."></textarea><br>
+                <label for="tempo">Há quanto tempo tem os sintomas?</label><br>
+                <textarea name="" id="tempo" cols="30" rows="2" placeholder="Ex: 1 mês... Passa durante algumas horas e depois volta."></textarea><br>
+                <label for="alivio">O que faz para aliviar?</label><br>
+                <textarea name="" id="alivio" cols="30" rows="2" placeholder="Ex: Tomo paracetamol frequentemente."></textarea><br>
+                <label for="historico">Histórico de doença familiar?</label><br>
+                <textarea name="" id="historico" cols="30" rows="2" placeholder="Ex: Pressão alta..."></textarea><br>
+                <label for="habitos">Possui hábitos incomuns, prejudiciais ou tiques?</label><br>
+                <textarea name="" id="habitos" cols="30" rows="2" placeholder="Ex: Pressão alta..."></textarea><br>
+                <label for="ex">Pratica exercícios físicos?</label><br>
+                <select name="" id="ex">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                    <option value="Raramente">Raramente</option>
+                </select><br>
+                <a class="a-btn a-btn-1" onclick="TerceiroForm()">Seguinte</a>
+            </form>
+        </div>
+
+        <div class="divisao-5" id="passo-4">
+            <h2 class="titulo">Exames</h2>
+            <form action="" class="formulario formulario-2">
+                <label for="nome">Nome do/a paciente:</label>
+                <input type="text" name="" id="nome-4" placeholder="Fulano de Tal" disabled>
+                <p class="descricao">Introduza os exames que o/a paciente deverá realizar.</p>
+                <label for="exames">Exames a serem realizados:</label>
+                <textarea name="" id="exames" cols="30" rows="5" placeholder="Ex: Hemograma completo, Covid-19, Eletrocardiograma..."></textarea>
+            </form>
+        </div>
+
+        <section class="container">
+            <div class="facilitadora">
+                <h4 class="escolha">Escolha a opção pretendida e desfrute do sistema!</h4>
+                <article>
+                    <a class="opcao opcao-1" onclick="ImprimirUm()">Página de impressão</a>
+                    <a href="./fase-2.html" class="opcao opcao-2">Segunda fase</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="dev"> Desenvolvido por Eurico Dande, 2023. &copy; Todos os direitos reservados!</p>
+    </footer>
+    <script src="js/fase-2.js"></script>
+</body>
+</html>
