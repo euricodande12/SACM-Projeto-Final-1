@@ -19,7 +19,6 @@
 body{
 	background-color: var(--verde-mais-escuro);
 	width: 100vw;
-
     overflow-x: hidden;
 }
 
@@ -178,16 +177,16 @@ input::placeholder {
 	}	
 
     input{
-        width: 80%;
+        width: 95%;
         height:40px;
         margin-top: 20px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         padding: 10px 8px;
     }
 
 	.btn-entrar{
-		font-size: 1.1rem;
-		width: 80%;
+		font-size: 0.9rem;
+		width: 95%;
 	}
 
 	.last-paragraph{

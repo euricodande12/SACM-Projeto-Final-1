@@ -283,13 +283,51 @@ footer{
         align-items: center;
     }
 
+    .boas-vindas{
+        font-size: 1.2rem;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+    
+    input, select{
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    textarea{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
     .escolha{
         font-size: 1rem;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcao-1{
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
 @media print{
-    *{color: black !important;}
+    *{
+        color: black !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 
     header, footer, img, a, h1, h2, h4{
         display: none;

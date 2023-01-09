@@ -270,6 +270,20 @@ footer{
     }
 
     .escolha{
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    .opcao-1{
+        font-size: 0.8rem;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .opcao-2{
+        font-size: 0.8rem;
+    }
+    
+    .col{
+        display: flex;
+        flex-direction: column;
     }
 }
