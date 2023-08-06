@@ -1,3 +1,6 @@
 # SACM-Projeto-Final-1
 Projeto final da formação - Sistema de Atendimento para um consultório médico.
-Primeira parte do projeto!
+
+## Tecnologias utilizadas
+#### HTML5, CSS3 e JavaScript.
+<a href="https://euricodande12.github.io/SACM-Projeto-Final-1/" target="_blank">Link do projecto</a>
